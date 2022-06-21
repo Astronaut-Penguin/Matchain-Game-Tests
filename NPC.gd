@@ -1,4 +1,4 @@
-extends Node
+extends RigidBody2D
 
 
 # Declare member variables here. Examples:
@@ -10,7 +10,8 @@ extends Node
 func _ready():
 	pass # Replace with function body.
 
-func _on_Player_contact():
-	var dialog = Dialogic.start("conver")
-	add_child(dialog)
 
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	$AnimatedSprite.play()
+	$AnimatedSprite.animation = "Idle"

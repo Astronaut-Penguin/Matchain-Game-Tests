@@ -1,0 +1,21 @@
+{
+	"color": "#fffb2a2a",
+	"description": "Depressed penguin its a depressed character. It has the appeareance of a penguin with a ponytail and some white hairs, probably due to stress. He drinks coffe and smokes, he has eye bags, probably due to stress too.",
+	"display_name": "",
+	"display_name_bool": false,
+	"id": "character-1655830541.json",
+	"mirror_portraits": false,
+	"name": "Depressed Penguin",
+	"nickname": "",
+	"nickname_bool": false,
+	"offset_x": 0,
+	"offset_y": 0,
+	"portraits": [
+		{
+			"name": "Default",
+			"path": "res://art/NPC/Depressed penguin/Agustin.png"
+		}
+	],
+	"scale": 100,
+	"theme": ""
+}

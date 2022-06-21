@@ -1,0 +1,135 @@
+{
+	"events": [
+		{
+			"character": "character-1655835863.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Ah..."
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1655835863.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": true,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": false
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1655835863.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "What a nice day... huh...."
+		},
+		{
+			"animation": "1-fade_in.gd",
+			"animation_length": 0,
+			"change_mirror_portrait": false,
+			"change_z_index": false,
+			"character": "character-1655830541.json",
+			"event_id": "dialogic_002",
+			"mirror_portrait": false,
+			"portrait": "Default",
+			"portrait_definition": "",
+			"position": {
+				"0": false,
+				"1": false,
+				"2": false,
+				"3": false,
+				"4": true
+			},
+			"type": 0,
+			"z_index": 0
+		},
+		{
+			"character": "character-1655830541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey.... a glass of the same as always"
+		},
+		{
+			"character": "character-1655835863.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "An ethereum dip on the rocks coming!"
+		},
+		{
+			"character": "character-1655830541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": ". . . "
+		},
+		{
+			"character": "",
+			"event_id": "dialogic_010",
+			"options": [
+
+			],
+			"portrait": "",
+			"question": "Fuck. Seems like touched a soft fiber"
+		},
+		{
+			"choice": "Apology",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1655835863.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Hey.. sry\nI just tried to add some fun here"
+		},
+		{
+			"character": "character-1655830541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Its ok..."
+		},
+		{
+			"choice": "Say nothin´",
+			"condition": "",
+			"definition": "",
+			"event_id": "dialogic_011",
+			"value": ""
+		},
+		{
+			"character": "character-1655835863.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": " . . ."
+		},
+		{
+			"event_id": "dialogic_013"
+		},
+		{
+			"character": "character-1655835863.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "Here, serve yourself"
+		},
+		{
+			"character": "character-1655830541.json",
+			"event_id": "dialogic_001",
+			"portrait": "",
+			"text": "* Gulp *\nAAAAAAHHHHH....\nAin´t no other like this shit"
+		}
+	],
+	"metadata": {
+		"dialogic-version": "1.4.2 - Dev",
+		"file": "timeline-1655834571.json",
+		"name": "conver"
+	}
+}

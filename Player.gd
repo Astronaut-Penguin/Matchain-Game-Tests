@@ -3,6 +3,7 @@ extends Area2D
 export var speed = 400
 var screen_size # size of the game window
 signal contact
+onready var body = get_parent().get_node("NPC1")
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -23,7 +24,7 @@ func _process(delta):
 	
 	# If the velocity its a value, then walk |& flip
 	if velocity.x != 0:
-		$AnimatedSprite.animation = "walk"
+		$AnimatedSprite.animation = "Walk"
 		$AnimatedSprite.flip_v = false
 		# See the note below about boolean assignment.
 		$AnimatedSprite.flip_h = velocity.x < 0
@@ -35,12 +36,13 @@ func _process(delta):
 	position += velocity * delta
 	position.x = clamp(position.x,0,screen_size.x)
 	position.y = clamp(position.y,0,screen_size.y)
+	
+	if(overlaps_body(body)):
+		if Input.is_action_pressed("interact"):
+			emit_signal("contact")
 
 func start(pos):
 	position = pos
 	show()
 	$CollisionShape2D.disabled = false
 
-func _on_Player_body_entered(body):
-	emit_signal("contact")
-	$CollisionShape2D.set_deferred("disabled", true)
