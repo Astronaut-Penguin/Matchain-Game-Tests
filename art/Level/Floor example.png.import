@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Fc pronalds employee_Idle_10.png-8850738e3f467bd8ea6209481058dbbd.stex"
+path="res://.import/Floor example.png-8951082b5b42a863bb34e1e8c63bf351.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Player/Idle/Fc pronalds employee_Idle_10.png"
-dest_files=[ "res://.import/Fc pronalds employee_Idle_10.png-8850738e3f467bd8ea6209481058dbbd.stex" ]
+source_file="res://art/Level/Floor example.png"
+dest_files=[ "res://.import/Floor example.png-8951082b5b42a863bb34e1e8c63bf351.stex" ]
 
 [params]
 
