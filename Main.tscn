@@ -1,11 +1,15 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=11 format=2]
 
 [ext_resource path="res://Main.gd" type="Script" id=1]
 [ext_resource path="res://Player.tscn" type="PackedScene" id=2]
 [ext_resource path="res://art/Level/Floor example.png" type="Texture" id=3]
 [ext_resource path="res://NPC.tscn" type="PackedScene" id=4]
-[ext_resource path="res://art/Level/Lamp example.png" type="Texture" id=5]
-[ext_resource path="res://art/Level/Map example.png" type="Texture" id=6]
+[ext_resource path="res://art/Level/Bar module.png" type="Texture" id=5]
+[ext_resource path="res://art/Level/Table module.png" type="Texture" id=6]
+[ext_resource path="res://art/Level/TV module.png" type="Texture" id=7]
+[ext_resource path="res://art/Level/GI/spotlight.webp" type="Texture" id=8]
+[ext_resource path="res://art/Level/GI/Spot-Light-PNG-Images.png" type="Texture" id=9]
+[ext_resource path="res://Lamp.tscn" type="PackedScene" id=10]
 
 [node name="Main" type="Node"]
 script = ExtResource( 1 )
@@ -15,7 +19,7 @@ position = Vector2( 588, 304 )
 z_index = 2
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
-position = Vector2( 510, 292 )
+position = Vector2( 552, 293 )
 z_index = 2
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
@@ -24,29 +28,68 @@ offset = Vector2( 510, 292 )
 current = true
 zoom = Vector2( 0.2, 0.2 )
 
-[node name="FloorExample" type="Sprite" parent="."]
-position = Vector2( 504, 323 )
+[node name="Light2D" type="Light2D" parent="Player"]
+position = Vector2( 0, 2 )
+texture = ExtResource( 8 )
+energy = 0.71
+
+[node name="CanvasModulate" type="CanvasModulate" parent="."]
+position = Vector2( 496, 261 )
+color = Color( 0.898039, 0.654902, 0.494118, 1 )
+
+[node name="BarModule" type="Sprite" parent="."]
+position = Vector2( 552, 258 )
+texture = ExtResource( 5 )
+
+[node name="TableModule" type="Sprite" parent="BarModule"]
+position = Vector2( -149, 0 )
+texture = ExtResource( 6 )
+
+[node name="TableModule2" type="Sprite" parent="BarModule"]
+position = Vector2( -245, 0 )
+texture = ExtResource( 6 )
+
+[node name="TableModule3" type="Sprite" parent="BarModule"]
+position = Vector2( -341, 0 )
+texture = ExtResource( 6 )
+
+[node name="TableModule4" type="Sprite" parent="BarModule"]
+position = Vector2( 323, 0 )
+texture = ExtResource( 6 )
+
+[node name="TableModule5" type="Sprite" parent="BarModule"]
+position = Vector2( 227, 0 )
+texture = ExtResource( 6 )
+
+[node name="TvModule" type="Sprite" parent="BarModule"]
+position = Vector2( 140, 0 )
+texture = ExtResource( 7 )
+
+[node name="FloorExample" type="Sprite" parent="BarModule"]
+position = Vector2( -8, 65 )
+z_index = 2
 texture = ExtResource( 3 )
 
-[node name="LampExample" type="Sprite" parent="."]
-position = Vector2( 309, 218 )
-z_index = 1
-texture = ExtResource( 5 )
+[node name="Bar Light" type="Light2D" parent="BarModule"]
+position = Vector2( -39, -9 )
+scale = Vector2( 1, 0.2 )
+texture = ExtResource( 9 )
+texture_scale = 0.4
+energy = 0.71
 
-[node name="LampExample" type="Sprite" parent="LampExample"]
-position = Vector2( -97, -1 )
-texture = ExtResource( 5 )
+[node name="Lamp" parent="." instance=ExtResource( 10 )]
+position = Vector2( -29, -83 )
 
-[node name="LampExample2" type="Sprite" parent="LampExample"]
-position = Vector2( 374, 0 )
-texture = ExtResource( 5 )
+[node name="Lamp2" parent="." instance=ExtResource( 10 )]
+position = Vector2( -125, -83 )
 
-[node name="LampExample3" type="Sprite" parent="LampExample"]
-position = Vector2( 471, 0 )
-texture = ExtResource( 5 )
+[node name="Lamp3" parent="." instance=ExtResource( 10 )]
+position = Vector2( -221, -83 )
 
-[node name="MapExample" type="Sprite" parent="."]
-position = Vector2( 496, 258 )
-texture = ExtResource( 6 )
+[node name="Lamp4" parent="." instance=ExtResource( 10 )]
+position = Vector2( 348, -83 )
+
+[node name="Lamp5" parent="." instance=ExtResource( 10 )]
+position = Vector2( 444, -83 )
 
 [connection signal="contact" from="Player" to="." method="_on_Player_contact"]

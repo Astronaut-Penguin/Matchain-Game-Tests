@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Map example.png-cd9bcb6da86b1922a34a344a6b3abeb8.stex"
+path="res://.import/Walk free_Walk free_10.png-191d75f9a92320f28df57699ce19dda4.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://art/Level/Map example.png"
-dest_files=[ "res://.import/Map example.png-cd9bcb6da86b1922a34a344a6b3abeb8.stex" ]
+source_file="res://art/Player/Walk free/Walk free_Walk free_10.png"
+dest_files=[ "res://.import/Walk free_Walk free_10.png-191d75f9a92320f28df57699ce19dda4.stex" ]
 
 [params]
 
