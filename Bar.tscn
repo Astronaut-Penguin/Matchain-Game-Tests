@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://art/Level/GI/Spot-Light-PNG-Images.png" type="Texture" id=1]
+
+[sub_resource type="StreamTexture" id=1]
+load_path = "res://.import/Bar module.png-2ee6c24403b6b23f11141127cb9c733e.stex"
+
+[node name="Bar" type="Node2D"]
+
+[node name="BarModule" type="Sprite" parent="."]
+position = Vector2( 552, 258 )
+texture = SubResource( 1 )
+
+[node name="Bar Light" type="Light2D" parent="BarModule"]
+position = Vector2( -39, -9 )
+scale = Vector2( 1, 0.2 )
+texture = ExtResource( 1 )
+texture_scale = 0.4
+energy = 0.71

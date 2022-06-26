@@ -7,9 +7,9 @@ extends Sprite
 var rand: int
 enum {twinking, waiting}
 var state = waiting
-export var maxlight = 1
+export var maxlight = 1.0
 export var lightRate = 0.05
-export var twinkModulo = 20
+export var twinkModulo = 1.0
 var main_lamp
 var energy
 # Called when the node enters the scene tree for the first time.
